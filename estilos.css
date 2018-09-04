@@ -104,8 +104,15 @@ main {
   display: inline-block;
 }
 
-#posts-principais .post .titulo {
-  text-shadow: 1px 1px black;
+#posts-principais .post {
+	position: relative;
+  	text-shadow: 1px 1px black;
+}
+
+#posts-principais .post .titulo{
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.5);
+	top: 5px;
 }
 
 #posts-principais .post img {
@@ -159,8 +166,25 @@ main {
   text-align: center;
 }
 
+
+
 #tags h1 {
   margin-bottom: 1em;
+}
+
+.tag-1:active,
+.tag-2:active,
+.tag-3:active {
+	position: relative;
+	bottom: 2px;
+	right: 2px;
+	cursor: pointer;
+}
+
+.tag-1:hover,
+.tag-2:hover,
+.tag-3:hover {
+	cursor: pointer;
 }
 
 .tag-1,
@@ -269,6 +293,7 @@ footer .texto-rodape {
 
 
 #voltar-topo {
+  position: fixed;	
   background-color: white;
   border-radius: 20%;
   border: 2px solid silver;
@@ -279,4 +304,20 @@ footer .texto-rodape {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  right: 15px;
+  bottom: 15px;
+
+}
+
+.boo{
+	position:absolute;
+	opacity:0.3;
+	bottom: 50px;
+	right: 50px;
+	width: 40px;
+	height: 40px;
+}
+
+.boo:hover{
+	opacity:1;
 }
